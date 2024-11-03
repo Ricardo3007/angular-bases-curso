@@ -1,0 +1,22 @@
+
+<div class="container">
+  <h1> Personajes DBZ </h1>
+  <hr>
+
+  <div class="row">
+      <div class="col">
+          <h1>Lista de personajes</h1>
+
+          <app-list-character [characterList]="character" (onDeteleId)="onDeteleCharacterById($event)"></app-list-character>
+
+      </div>
+
+      <div class="col">
+        <h1>Crear personajes</h1>
+
+        <app-form-character (onEmitCharacter)="onEmitCharacter($event)"></app-form-character>
+
+      </div>
+  </div>
+
+</div>
